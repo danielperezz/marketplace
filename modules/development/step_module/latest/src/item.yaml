@@ -1,0 +1,17 @@
+apiVersion: v1
+categories:
+- step-module
+description: step module
+example: step_module.ipynb
+generationDate: 2025-11-11:12-25
+hidden: false
+labels:
+  author: Iguazio
+mlrunVersion: 1.10.0
+name: step_module
+spec:
+    filename: step_module.py
+    image: mlrun/mlrun
+    requirements:
+    kind: step
+version: 1.0.0

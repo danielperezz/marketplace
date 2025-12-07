@@ -1,1 +1,312 @@
-{"count_events": {"latest": {"apiVersion": "v1", "categories": ["model-serving"], "description": "Count events in each time window", "example": "count_events.ipynb", "generationDate": "2025-09-16:12-25", "hidden": false, "labels": {"author": "Iguazio"}, "mlrunVersion": "1.10.0-rc41", "name": "count_events", "spec": {"filename": "count_events.py", "image": "mlrun/mlrun", "kind": "monitoring_application", "requirements": null}, "version": "1.0.0", "assets": {"example": "src/count_events.ipynb", "source": "src/count_events.py", "docs": "static/documentation.html"}}, "1.0.0": {"apiVersion": "v1", "categories": ["model-serving"], "description": "Count events in each time window", "example": "count_events.ipynb", "generationDate": "2025-09-16:12-25", "hidden": false, "labels": {"author": "Iguazio"}, "mlrunVersion": "1.10.0-rc41", "name": "count_events", "spec": {"filename": "count_events.py", "image": "mlrun/mlrun", "kind": "monitoring_application", "requirements": null}, "version": "1.0.0", "assets": {"example": "src/count_events.ipynb", "source": "src/count_events.py", "docs": "static/documentation.html"}}}, "histogram_data_drift": {"latest": {"apiVersion": "v1", "categories": ["model-serving", "structured-ML"], "description": "Model-monitoring application for detecting and visualizing data drift", "example": "histogram_data_drift.ipynb", "generationDate": "2025-11-06:12-25", "hidden": false, "labels": {"author": "Iguazio"}, "mlrunVersion": "1.10.0-rc41", "name": "histogram_data_drift", "spec": {"filename": "histogram_data_drift.py", "image": "mlrun/mlrun", "kind": "monitoring_application", "requirements": ["plotly~=5.23", "pandas"]}, "version": "1.0.0", "assets": {"example": "src/histogram_data_drift.ipynb", "source": "src/histogram_data_drift.py", "docs": "static/documentation.html"}}, "1.0.0": {"apiVersion": "v1", "categories": ["model-serving", "structured-ML"], "description": "Model-monitoring application for detecting and visualizing data drift", "example": "histogram_data_drift.ipynb", "generationDate": "2025-11-06:12-25", "hidden": false, "labels": {"author": "Iguazio"}, "mlrunVersion": "1.10.0-rc41", "name": "histogram_data_drift", "spec": {"filename": "histogram_data_drift.py", "image": "mlrun/mlrun", "kind": "monitoring_application", "requirements": ["plotly~=5.23", "pandas"]}, "version": "1.0.0", "assets": {"example": "src/histogram_data_drift.ipynb", "source": "src/histogram_data_drift.py", "docs": "static/documentation.html"}}}, "openai_proxy_app": {"latest": {"apiVersion": "v1", "categories": ["genai"], "description": "OpenAI application runtime based on fastapi", "example": "openai_proxy_app.ipynb", "generationDate": "2025-11-11:12-25", "hidden": false, "labels": {"author": "Iguazio"}, "mlrunVersion": "1.10.0", "name": "openai_proxy_app", "spec": {"filename": "openai_proxy_app.py", "image": "mlrun/mlrun", "requirements": ["fastapi>=0.110,<1.0", "uvicorn[standard]>=0.29,<1.0", "gunicorn>=21.2,<22.0", "requests>=2.31,<3.0"], "kind": "generic"}, "version": "1.0.0", "assets": {"example": "src/openai_proxy_app.ipynb", "source": "src/openai_proxy_app.py", "docs": "static/documentation.html"}}, "1.0.0": {"apiVersion": "v1", "categories": ["genai"], "description": "OpenAI application runtime based on fastapi", "example": "openai_proxy_app.ipynb", "generationDate": "2025-11-11:12-25", "hidden": false, "labels": {"author": "Iguazio"}, "mlrunVersion": "1.10.0", "name": "openai_proxy_app", "spec": {"filename": "openai_proxy_app.py", "image": "mlrun/mlrun", "requirements": ["fastapi>=0.110,<1.0", "uvicorn[standard]>=0.29,<1.0", "gunicorn>=21.2,<22.0", "requests>=2.31,<3.0"], "kind": "generic"}, "version": "1.0.0", "assets": {"example": "src/openai_proxy_app.ipynb", "source": "src/openai_proxy_app.py", "docs": "static/documentation.html"}}}, "evidently_iris": {"latest": {"apiVersion": "v1", "categories": ["model-serving", "structured-ML"], "description": "Demonstrates Evidently integration in MLRun for data quality and drift monitoring using the Iris dataset", "example": "evidently_iris.ipynb", "generationDate": "2025-11-09:12-25", "hidden": false, "labels": {"author": "Iguazio"}, "mlrunVersion": "1.10.0-rc41", "name": "evidently_iris", "spec": {"filename": "evidently_iris.py", "image": "mlrun/mlrun", "kind": "monitoring_application", "requirements": ["scikit-learn~=1.5.2", "evidently~=0.7.5", "pandas", "sniffio~=1.3.0"]}, "version": "1.0.0", "assets": {"example": "src/evidently_iris.ipynb", "source": "src/evidently_iris.py", "docs": "static/documentation.html"}}, "1.0.0": {"apiVersion": "v1", "categories": ["model-serving", "structured-ML"], "description": "Demonstrates Evidently integration in MLRun for data quality and drift monitoring using the Iris dataset", "example": "evidently_iris.ipynb", "generationDate": "2025-11-09:12-25", "hidden": false, "labels": {"author": "Iguazio"}, "mlrunVersion": "1.10.0-rc41", "name": "evidently_iris", "spec": {"filename": "evidently_iris.py", "image": "mlrun/mlrun", "kind": "monitoring_application", "requirements": ["scikit-learn~=1.5.2", "evidently~=0.7.5", "pandas", "sniffio~=1.3.0"]}, "version": "1.0.0", "assets": {"example": "src/evidently_iris.ipynb", "source": "src/evidently_iris.py", "docs": "static/documentation.html"}}}}
+{
+  "count_events": {
+    "latest": {
+      "apiVersion": "v1",
+      "categories": [
+        "model-serving"
+      ],
+      "description": "Count events in each time window",
+      "example": "count_events.ipynb",
+      "generationDate": "2025-09-16:12-25",
+      "hidden": false,
+      "labels": {
+        "author": "Iguazio"
+      },
+      "mlrunVersion": "1.10.0-rc41",
+      "name": "count_events",
+      "spec": {
+        "filename": "count_events.py",
+        "image": "mlrun/mlrun",
+        "kind": "monitoring_application",
+        "requirements": null
+      },
+      "version": "1.0.0",
+      "assets": {
+        "example": "src/count_events.ipynb",
+        "source": "src/count_events.py",
+        "docs": "static/documentation.html"
+      }
+    },
+    "1.0.0": {
+      "apiVersion": "v1",
+      "categories": [
+        "model-serving"
+      ],
+      "description": "Count events in each time window",
+      "example": "count_events.ipynb",
+      "generationDate": "2025-09-16:12-25",
+      "hidden": false,
+      "labels": {
+        "author": "Iguazio"
+      },
+      "mlrunVersion": "1.10.0-rc41",
+      "name": "count_events",
+      "spec": {
+        "filename": "count_events.py",
+        "image": "mlrun/mlrun",
+        "kind": "monitoring_application",
+        "requirements": null
+      },
+      "version": "1.0.0",
+      "assets": {
+        "example": "src/count_events.ipynb",
+        "source": "src/count_events.py",
+        "docs": "static/documentation.html"
+      }
+    }
+  },
+  "histogram_data_drift": {
+    "latest": {
+      "apiVersion": "v1",
+      "categories": [
+        "model-serving",
+        "structured-ML"
+      ],
+      "description": "Model-monitoring application for detecting and visualizing data drift",
+      "example": "histogram_data_drift.ipynb",
+      "generationDate": "2025-11-06:12-25",
+      "hidden": false,
+      "labels": {
+        "author": "Iguazio"
+      },
+      "mlrunVersion": "1.10.0-rc41",
+      "name": "histogram_data_drift",
+      "spec": {
+        "filename": "histogram_data_drift.py",
+        "image": "mlrun/mlrun",
+        "kind": "monitoring_application",
+        "requirements": [
+          "plotly~=5.23",
+          "pandas"
+        ]
+      },
+      "version": "1.0.0",
+      "assets": {
+        "example": "src/histogram_data_drift.ipynb",
+        "source": "src/histogram_data_drift.py",
+        "docs": "static/documentation.html"
+      }
+    },
+    "1.0.0": {
+      "apiVersion": "v1",
+      "categories": [
+        "model-serving",
+        "structured-ML"
+      ],
+      "description": "Model-monitoring application for detecting and visualizing data drift",
+      "example": "histogram_data_drift.ipynb",
+      "generationDate": "2025-11-06:12-25",
+      "hidden": false,
+      "labels": {
+        "author": "Iguazio"
+      },
+      "mlrunVersion": "1.10.0-rc41",
+      "name": "histogram_data_drift",
+      "spec": {
+        "filename": "histogram_data_drift.py",
+        "image": "mlrun/mlrun",
+        "kind": "monitoring_application",
+        "requirements": [
+          "plotly~=5.23",
+          "pandas"
+        ]
+      },
+      "version": "1.0.0",
+      "assets": {
+        "example": "src/histogram_data_drift.ipynb",
+        "source": "src/histogram_data_drift.py",
+        "docs": "static/documentation.html"
+      }
+    }
+  },
+  "openai_proxy_app": {
+    "latest": {
+      "apiVersion": "v1",
+      "categories": [
+        "genai"
+      ],
+      "description": "OpenAI application runtime based on fastapi",
+      "example": "openai_proxy_app.ipynb",
+      "generationDate": "2025-11-11:12-25",
+      "hidden": false,
+      "labels": {
+        "author": "Iguazio"
+      },
+      "mlrunVersion": "1.10.0",
+      "name": "openai_proxy_app",
+      "spec": {
+        "filename": "openai_proxy_app.py",
+        "image": "mlrun/mlrun",
+        "requirements": [
+          "fastapi>=0.110,<1.0",
+          "uvicorn[standard]>=0.29,<1.0",
+          "gunicorn>=21.2,<22.0",
+          "requests>=2.31,<3.0"
+        ],
+        "kind": "generic"
+      },
+      "version": "1.0.0",
+      "assets": {
+        "example": "src/openai_proxy_app.ipynb",
+        "source": "src/openai_proxy_app.py",
+        "docs": "static/documentation.html"
+      }
+    },
+    "1.0.0": {
+      "apiVersion": "v1",
+      "categories": [
+        "genai"
+      ],
+      "description": "OpenAI application runtime based on fastapi",
+      "example": "openai_proxy_app.ipynb",
+      "generationDate": "2025-11-11:12-25",
+      "hidden": false,
+      "labels": {
+        "author": "Iguazio"
+      },
+      "mlrunVersion": "1.10.0",
+      "name": "openai_proxy_app",
+      "spec": {
+        "filename": "openai_proxy_app.py",
+        "image": "mlrun/mlrun",
+        "requirements": [
+          "fastapi>=0.110,<1.0",
+          "uvicorn[standard]>=0.29,<1.0",
+          "gunicorn>=21.2,<22.0",
+          "requests>=2.31,<3.0"
+        ],
+        "kind": "generic"
+      },
+      "version": "1.0.0",
+      "assets": {
+        "example": "src/openai_proxy_app.ipynb",
+        "source": "src/openai_proxy_app.py",
+        "docs": "static/documentation.html"
+      }
+    }
+  },
+  "evidently_iris": {
+    "latest": {
+      "apiVersion": "v1",
+      "categories": [
+        "model-serving",
+        "structured-ML"
+      ],
+      "description": "Demonstrates Evidently integration in MLRun for data quality and drift monitoring using the Iris dataset",
+      "example": "evidently_iris.ipynb",
+      "generationDate": "2025-11-09:12-25",
+      "hidden": false,
+      "labels": {
+        "author": "Iguazio"
+      },
+      "mlrunVersion": "1.10.0-rc41",
+      "name": "evidently_iris",
+      "spec": {
+        "filename": "evidently_iris.py",
+        "image": "mlrun/mlrun",
+        "kind": "monitoring_application",
+        "requirements": [
+          "scikit-learn~=1.5.2",
+          "evidently~=0.7.5",
+          "pandas",
+          "sniffio~=1.3.0"
+        ]
+      },
+      "version": "1.0.0",
+      "assets": {
+        "example": "src/evidently_iris.ipynb",
+        "source": "src/evidently_iris.py",
+        "docs": "static/documentation.html"
+      }
+    },
+    "1.0.0": {
+      "apiVersion": "v1",
+      "categories": [
+        "model-serving",
+        "structured-ML"
+      ],
+      "description": "Demonstrates Evidently integration in MLRun for data quality and drift monitoring using the Iris dataset",
+      "example": "evidently_iris.ipynb",
+      "generationDate": "2025-11-09:12-25",
+      "hidden": false,
+      "labels": {
+        "author": "Iguazio"
+      },
+      "mlrunVersion": "1.10.0-rc41",
+      "name": "evidently_iris",
+      "spec": {
+        "filename": "evidently_iris.py",
+        "image": "mlrun/mlrun",
+        "kind": "monitoring_application",
+        "requirements": [
+          "scikit-learn~=1.5.2",
+          "evidently~=0.7.5",
+          "pandas",
+          "sniffio~=1.3.0"
+        ]
+      },
+      "version": "1.0.0",
+      "assets": {
+        "example": "src/evidently_iris.ipynb",
+        "source": "src/evidently_iris.py",
+        "docs": "static/documentation.html"
+      }
+    }
+  },
+  "step_module": {
+    "latest": {
+      "apiVersion": "v1",
+      "categories": [
+      ],
+      "description": "Demonstrates Evidently integration in MLRun for data quality and drift monitoring using the Iris dataset",
+      "example": "",
+      "generationDate": "2025-11-09:12-25",
+      "hidden": false,
+      "labels": {
+        "author": "Iguazio"
+      },
+      "mlrunVersion": "1.10.0-rc41",
+      "name": "step_module",
+      "spec": {
+        "filename": "step_module.py",
+        "image": "mlrun/mlrun",
+        "kind": "step",
+        "requirements": [
+        ]
+      },
+      "version": "1.0.0",
+      "assets": {
+        "example": "",
+        "source": "src/step_module.py",
+        "docs": "static/documentation.html"
+      }
+    },
+    "1.0.0": {
+      "apiVersion": "v1",
+      "categories": [
+      ],
+      "description": "Demonstrates Evidently integration in MLRun for data quality and drift monitoring using the Iris dataset",
+      "example": "",
+      "generationDate": "2025-11-09:12-25",
+      "hidden": false,
+      "labels": {
+        "author": "Iguazio"
+      },
+      "mlrunVersion": "1.10.0-rc41",
+      "name": "step_module",
+      "spec": {
+        "filename": "step_module.py",
+        "image": "mlrun/mlrun",
+        "kind": "step",
+        "requirements": [
+        ]
+      },
+      "version": "1.0.0",
+      "assets": {
+        "example": "",
+        "source": "src/step_module.py",
+        "docs": "static/documentation.html"
+      }
+    }
+  }
+}
