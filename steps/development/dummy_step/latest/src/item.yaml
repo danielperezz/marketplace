@@ -14,4 +14,5 @@ spec:
   filename: dummy_step.py              
   image: mlrun/mlrun                                
   requirements:
+    - pandas
 version: 1.0.0                                      
