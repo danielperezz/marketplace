@@ -25,6 +25,32 @@
         "source": "src/dummy_step.py",
         "docs": "static/documentation.html"
       }
+    },
+    "1.0.0": {
+      "apiVersion": "v1",
+      "categories": [
+      ],
+      "description": "Demonstrates Evidently integration in MLRun for data quality and drift monitoring using the Iris dataset",
+      "example": "",
+      "generationDate": "2025-11-09:12-25",
+      "hidden": false,
+      "labels": {
+        "author": "Iguazio"
+      },
+      "mlrunVersion": "1.10.0-rc41",
+      "name": "dummy_step",
+      "spec": {
+        "filename": "dummy_step.py",
+        "image": "mlrun/mlrun",
+        "requirements": [
+        ]
+      },
+      "version": "1.0.0",
+      "assets": {
+        "example": "",
+        "source": "src/dummy_step.py",
+        "docs": "static/documentation.html"
+      }
     }
   }
 }
