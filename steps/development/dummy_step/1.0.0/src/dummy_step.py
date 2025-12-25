@@ -5,7 +5,7 @@ def standalone_handler(x):
 
 class DummyStep:
     """ this is a dummy test for testing purpose"""
-    def __init__(self, name=None, bool_param=False):
+    def __init__(self, bool_param, name=None):
         self.name = name
         self.bool_param = bool_param
 
