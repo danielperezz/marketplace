@@ -9,7 +9,7 @@ labels:
 mlrunVersion: 1.10.0-rc41
 name: dummy_step
 className: DummyStep
-defaultHandler: do
+defaultHandler:
 spec:
   filename: dummy_step.py              
   image: mlrun/mlrun                                
