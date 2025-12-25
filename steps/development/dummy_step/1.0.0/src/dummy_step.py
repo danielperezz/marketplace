@@ -5,7 +5,9 @@ def standalone_handler(x):
 
 class DummyStep:
     """ this is a dummy test for testing purpose"""
-    def __init__(self, bool_param, name=None):
+    def __init__(self, name=None, bool_param=False):
+        if not isinstance(bool_param, bool):
+            raise TypeError("bool_param must be a boolean")
         self.name = name
         self.bool_param = bool_param
 
