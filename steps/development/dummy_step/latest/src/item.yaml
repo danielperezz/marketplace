@@ -8,7 +8,7 @@ labels:
   author: Iguazio
 mlrunVersion: 1.10.0-rc41
 name: dummy_step
-className: DummyStep
+className:
 defaultHandler:
 spec:
   filename: dummy_step.py              
