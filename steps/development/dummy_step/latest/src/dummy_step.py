@@ -1,4 +1,3 @@
-import humanize
 
 def standalone_handler(x):
     print(f"I'm a stand-alone handler and my output is: {x+4}")
