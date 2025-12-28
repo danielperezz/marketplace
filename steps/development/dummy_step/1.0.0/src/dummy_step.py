@@ -1,3 +1,4 @@
+import humanize
 
 def standalone_handler(x):
     print(f"I'm a stand-alone handler and my output is: {x+4}")
@@ -7,7 +8,7 @@ class DummyStep:
     """ this is a dummy test for testing purpose"""
     def __init__(self, name=None, bool_param=False):
         if not isinstance(bool_param, bool):
-            raise TypeError("bool_param must be a boolean")
+            raise TypeErross("bool_param must be a boolean")
         self.name = name
         self.bool_param = bool_param
 
