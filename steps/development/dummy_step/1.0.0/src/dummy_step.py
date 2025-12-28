@@ -7,16 +7,19 @@ def standalone_handler(x):
 class DummyStep:
     """ this is a dummy test for testing purpose"""
     def __init__(self, name=None, bool_param=False):
-        if not isinstance(bool_param, bool):
-            raise TypeErross("bool_param must be a boolean")
         self.name = name
         self.bool_param = bool_param
 
-    def do(self, x):
-        print(f"My name is {self.name} and my output is: {x+3}")
-        class_args_ok = "yes" if self.bool_param else "no"
-        print(f"Successfully accessed bool_param: {class_args_ok}")
-        return x+3
+    def do(self, row):
+        # In job mode, `execute_graph` reads the input as a DataFrame and passes each row as a dict/Series-like object.
+        print(f"[DummyStep] name={self.name}, bool_param={self.bool_param}, row={row}")
+        return {"ok": True, "name": self.name, "bool_param": self.bool_param, "row": row}
+
+    # def do(self, x):
+    #     print(f"My name is {self.name} and my output is: {x+3}")
+    #     class_args_ok = "yes" if self.bool_param else "no"
+    #     print(f"Successfully accessed bool_param: {class_args_ok}")
+    #     return x+3
 
     def another_do(self, x):
         print(f"I'm another class handler and my another output is: {x+5}")
