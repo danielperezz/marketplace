@@ -14,16 +14,27 @@
 #
 
 class VerifySchema:
-    def __init__(self, name, context, schema: dict):
-        self.name = name
-        self.context = context
+    """
+    This step validates that an event dictionary contains exactly the keys defined in the schema,
+    raising a KeyError if any are missing or unexpected.
+    """
+
+    def __init__(self, schema: list, allow_unexpected_keys: bool = False):
         self.schema = schema
+        self.allow_unexpected_keys = allow_unexpected_keys
 
     def do(self, event: dict):
-        for key, value_type in self.schema.items():
-            if key not in event:
-                raise KeyError(f"Schema verification failed: key '{key}' not found in event: {event}")
-            if not isinstance(event[key], value_type):
-                raise TypeError(f"Schema verification failed: key '{key}' is not of type "
-                                f"'{value_type.__name__}' in event: {event}")
+        # Check if all keys in the expected schema are present in the event
+        missing = set(self.schema) - set(event)
+        if missing:
+            raise KeyError(f"Schema verification failed: missing keys {missing} in event: {event}")
+
+        if self.allow_unexpected_keys:
+            return event
+
+        # Check if there are any unexpected keys in the event
+        unexpected = set(event) - set(self.schema)
+        if unexpected:
+            raise KeyError(f"Schema verification failed: unexpected keys {unexpected} in event: {event}")
+
         return event
